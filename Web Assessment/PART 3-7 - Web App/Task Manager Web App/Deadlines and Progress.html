@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- BANNER IMG-->
+    <div class="bigbanner">
+        <a href="home.html">
+        <img class="geloslogo" src="images/GE_Logo-inline-on-white.png" alt="Gelos logo">
+        </a>
+    </div>
+
+    <!-- NAVIGATION BAR-->
+    <nav class="navigationbar">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="Deadlines and Progress.html" class="navactive">Deadlines Progress and Task</a></li>
+            <li><a href="Help.html">Help</a></li>
+        </ul>
+    </nav>
+    <!-- FORM TO SUBMIT TASKS-->
+    <div class="form-container">
+        <form id="searchbar">
+            <label for="searchinput"></label>
+            <input id="searchinput" type="text" name="searchbar" placeholder="Search">
+        </form>
+
+        <form id="tasksubmitform">
+            <label for="tasknameinput">Enter Task Name</label>
+            <input id ="tasknameinput" type="text"  name="taskname"><br>
+
+            <label for="priorityinput">Select a priority</label>
+            <select name="priorityoptions" id="priorityinput">
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+            </select><br>
+
+            <label for="dateinput">Enter due date</label>
+            <input name="dateoptions" id="dateinput" type="date"><br>
+
+            <label for="consultantinput">Select a Consultant</label>
+            <select name="consultantoptions" id="consultantinput">
+                <option value="0">None</option>
+                <option value="1">Consultant 1</option>
+                <option value="2">Consultant 2</option>
+                <option value="3">Consultant 3</option>
+            </select><br>
+            <button id="addtaskbutton" class="submitbutton" type="submit">Add task</button>
+        </form>
+    </div>
+
+    <!-- Display tasks below-->
+
+    <div class="displaytasks">
+
+
+    </div>
+
+<!-- END OF CONTENT-->
+
+<footer>
+    <div class="PDFS">
+        <a href="/PDF/GE_Privacy-policy.pdf"><p>Gelos Privacy PDF</p></a>
+        <a href="/PDF/GE_Internet-usage-policy.pdf"><p class="internetusagePDF">Internet Usage Policy PDF</p></a>
+    </div>
+<p>© 2026 Gelos. All Rights Reserved</p>
+</footer>
+<script src="taskmanager.js"></script>
+</body>
+</html>
